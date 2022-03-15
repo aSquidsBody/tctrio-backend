@@ -1,0 +1,9 @@
+/node_modules
+secrets.ts
+heroku.txt
+.env
+knex.txt
+secrets/
+db/db.sqlite3
+pg.txt
+services

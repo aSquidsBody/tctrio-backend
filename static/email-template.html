@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Karla", sans-serif;
+      }
+
+      .navbar {
+        background: #1c2434;
+        height: 60px;
+      }
+
+      .container {
+        max-width: 1480px;
+        margin: auto;
+      }
+
+      .grey {
+        background: #909090;
+        padding: 10px 0px;
+        display: flex;
+      }
+
+      .imageWrapper {
+        position: relative;
+        height: 80px;
+        width: calc(1200 / 675 * 80px);
+      }
+
+      .image {
+        position: absolute;
+        top: -9px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+      }
+
+      .content {
+        background: #c0c0c0;
+        box-shadow: 1px 1px 5px 0px #1c2434;
+        max-width: 450px;
+        margin: 0px auto;
+        height: auto;
+      }
+
+      .label {
+        padding: 10px;
+        margin: 10px;
+        color: white;
+        background: #1c2434;
+        text-align: center;
+        line-height: 1.5rem;
+      }
+
+      .key {
+        text-align: center;
+      }
+
+      .value {
+        word-wrap: break-word;
+        padding: 5px 10px;
+        margin: 10px;
+        margin-bottom: 30px;
+        background: #e5e5e5;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <div class="imageWrapper">
+          <img class="image" src="{{backendUrl}}/images/signatures" />
+        </div>
+      </div>
+    </div>
+    <div class="grey">
+      <div class="content">
+        <h4 class="label">TYLER COCHRAN TRIO<br />BOOKING REQUEST</h4>
+        <p class="key">FROM</p>
+        <div class="value">{{name}}</div>
+        <p class="key">EMAIL</p>
+        <div class="value">{{email}}</div>
+        <p class="key">VENUE</p>
+        <div class="value">{{venue}}</div>
+        <p class="key">COMMENT</p>
+        <div class="value">{{comment}}</div>
+      </div>
+    </div>
+  </body>
+</html>
